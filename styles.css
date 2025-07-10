@@ -579,6 +579,7 @@ header {
 }
 
 .skill-box {
+    align-items: center;
     background: #1f1f1f;
     padding: 20px;
     border-radius: 10px;
@@ -612,10 +613,17 @@ header {
 }
 
 @media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .skill-box {
-        width: 80%;
+        width: 90% !important;
+        margin: 10px auto !important;
     }
 }
+
 
 /* experience section */
 .section {
@@ -708,7 +716,8 @@ header {
 
 @media (max-width: 768px) {
     .experience-box {
-        width: 80%;
+         width: 90% !important;
+         margin: 10px auto !important;
     }
 }
 
@@ -817,7 +826,10 @@ header {
 
 @media (max-width: 768px) {
     .competitive-box {
-        width: 80%;
+        width: 90% !important;
+        margin: 10px 20px auto !important;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -1117,20 +1129,4 @@ header {
     height: 2px;
     background-color: var(--accent-color);
 }
-   /* margin: 20px 0;
-    width: 80%;
-    max-width: 600px;
-    margin: 20px auto;
-    animation: pulse 1.5s infinite alternate;
 
-
- @keyframes pulse {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.05);
-    }
-}  */
-/* End of CSS */
-/* Add any additional styles below */
