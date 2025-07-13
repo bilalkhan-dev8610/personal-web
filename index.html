@@ -23,6 +23,11 @@
             <li><a href="#projects">My Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- theme-toggle  -->
+        <div class="theme-toggle" id="themeToggle" title="Toggle Theme">
+            <i class="fas fa-moon"></i>
+        </div>
+        <!-- theme-toggle  -->
         <div class="menu-toggle">
             <i class="fas fa-bars"></i>
         </div>
@@ -238,7 +243,7 @@
                 <a href="https://bilalkhan-dev8610.github.io/personal-web/" class="visit-github" target="_blank">View on
                     GitHub</a>
             </div>
-             <div class="project-box">
+            <div class="project-box">
                 <img src="icon-512.png" alt="Portfolio Website">
                 <h3>Portfolio Website</h3>
                 <p>• Personal portfolio showcasing projects and skills.</p>
@@ -287,40 +292,9 @@
     </footer>
 
     <!-- JavaScript for Mobile Menu and Scroll Animation -->
+     <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <script>
-        // Mobile Menu Toggle
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navMenu = document.querySelector('.nav-menu');
-
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
-
-        // Close menu when clicking on a nav item
-        document.querySelectorAll('.nav-menu a').forEach(item => {
-            item.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
-
-        // Scroll Animation
-        document.addEventListener('DOMContentLoaded', () => {
-            // Add animation to elements when they come into view
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('animate');
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            // Observe all sections
-            document.querySelectorAll('section').forEach(section => {
-                observer.observe(section);
-            });
-        });
-    </script>
+    
 </body>
 
 </html>
