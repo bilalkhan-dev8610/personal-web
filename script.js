@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
       icon.classList.add('fa-sun');
       localStorage.setItem('theme', 'light');
     } else {
-      icon.classList.remove('fa-sun'); mc
+      icon.classList.remove('fa-sun'); 
       icon.classList.add('fa-moon');
       localStorage.setItem('theme', 'dark');
     }

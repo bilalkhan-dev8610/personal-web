@@ -32,7 +32,7 @@ a {
 
 /* Header Styles */
 header {
-    position: sticky;
+    position: relative;
     top: 0;
     width: 100%;
     background-color: var(--secondary-bg);
@@ -103,7 +103,7 @@ header {
 }
 
 .nav-menu a:hover {
-    color: #000000;
+    color: #111111;
 }
 
 .nav-menu a:hover::after {
@@ -159,16 +159,19 @@ body.light-mode .btn-outline:hover {
 
 /* ===== DARK MODE: Nav Menu Items ===== */
 body:not(.light-mode) .nav-menu li {
-    background-color: #2a2a2a; /* darker background */
+    background-color: #333333; /* darker background */
     border: 1px solid #4CAF50; /* accent border */
     box-shadow: 0 0 4px #51bb54;
 }
 
 body:not(.light-mode) .nav-menu li:hover {
-    background-color: #1a1a1a;
+    color: white;
+    background-color: #070707;
     transform: translateY(-2px);
 }
-
+body:not(.light-mode) .nav-menu a {
+    color: var(--text-color);
+}
 /* Add more overrides if needed based on your theme */
 
 
@@ -204,6 +207,9 @@ body:not(.light-mode) .nav-menu li:hover {
 
 /* Main Section */
 .main-section {
+    /* background: url("img6.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
     min-height: 80vh;
     display: flex;
     flex-direction: column;
